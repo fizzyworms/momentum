@@ -1,3 +1,79 @@
+@import "variables.css";
+
 .hidden {
-  display: none;
+  display: none !important;
+}
+
+#login-form,
+#greeting {
+  display: flex;
+  justify-content: center;
+  color: var(--font-color);
+  padding-top: 150px;
+}
+
+img {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#clock {
+  position: absolute;
+  color: var(--font-color);
+  margin-left: var(--left-space);
+}
+
+#weather {
+  display: inline-block;
+  margin-top: 50px;
+  font-size: 20px;
+  color: var(--font-color);
+  margin-left: var(--left-space);
+}
+
+#quotes {
+  position: absolute;
+  bottom: 20px;
+  color: var(--font-color);
+  margin-left: var(--left-space);
+  font-size: 18px;
+}
+
+#quotes span:last-child {
+  padding-left: 20px;
+}
+
+#todo-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#login-form input,
+#todo-form input,
+#todo-form button {
+  border-radius: 10px;
+  border-style: double;
+  padding: 5px 20px;
+}
+
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--font-color);
+}
+
+#todo-list li {
+  padding-top: 10px;
+}
+
+#todo-list button {
+  margin-left: 15px;
+  border-radius: 10px;
 }

@@ -14,7 +14,7 @@ function onLoginSubmit(event) {
 }
 
 function paintGreetings(username) {
-  greeting.innerText = `hello ${username}`; //h1에 텍스트 넣음, 백틱``으로 변수와 문자열 결합.
+  greeting.innerText = `Hello ${username}`; //h1에 텍스트 넣음, 백틱``으로 변수와 문자열 결합.
   greeting.classList.remove(HIDDEN_CLASSNAME); // h1이 화면상에서 사라지지 않게 함
 }
 
